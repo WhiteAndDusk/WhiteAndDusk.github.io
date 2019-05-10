@@ -58,7 +58,7 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">WhiteDusk</h5>
-          <a href="mailto:634206017@qq.com" title="634206017@qq.com" class="mail">634206017@qq.com</a>
+          <a href="mailto:354149270@qq.com" title="354149270@qq.com" class="mail">354149270@qq.com</a>
         </hgroup>
       </div>
     </div>
@@ -75,42 +75,28 @@
             <li class="waves-block waves-effect">
               <a href="/WhiteAndDusk.github.io/archives">
                 <i class="icon icon-lg icon-archives"></i>
-                Archives
+                时间轴
               </a>
             </li>
         
             <li class="waves-block waves-effect">
               <a href="/WhiteAndDusk.github.io/tags">
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
+                标签
               </a>
             </li>
         
             <li class="waves-block waves-effect">
               <a href="/WhiteAndDusk.github.io/categories">
                 <i class="icon icon-lg icon-th-list"></i>
-                Categories
+                分类
               </a>
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="https://github.com/yscoder" target="_blank">
-                <i class="icon icon-lg icon-github"></i>
-                Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/ysweb" target="_blank">
+              <a href="http://weibo.com/WhiteDusk2017" target="_blank">
                 <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/WhiteAndDusk.github.io/custom">
-                <i class="icon icon-lg icon-link"></i>
-                测试
+                微博
               </a>
             </li>
         
@@ -277,8 +263,6 @@
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/WhiteAndDusk.github.io/2017/09/30/english1/" target="_blank" rel="external">https://WhiteAndDusk/WhiteAndDusk.github.io/2017/09/30/english1/</a>
-        
     </div>
     
     <footer>
@@ -387,6 +371,30 @@
 
 
 
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "R8JYHTmBjHC4KGWiTR6FWeeu-gzGzoHsz",
+            appKey: "buep6LW5Aq6cd8kRDSmf1HLL",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
 
 
 
@@ -402,7 +410,7 @@
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        谢谢大爷~
+        一介凡人
         <i class="icon icon-quote-right"></i>
     </h3>
     <div class="reward-content">
@@ -410,15 +418,6 @@
         <div class="reward-code">
             <img id="rewardCode" src="/WhiteAndDusk.github.io/img/wechat.jpg" alt="打赏二维码">
         </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/WhiteAndDusk.github.io/img/wechat.jpg" data-alipay="/WhiteAndDusk.github.io/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
         
     </div>
 </div>
@@ -446,7 +445,7 @@
         </p>
     </div>
     <div class="bottom">
-        <p><span>WhiteDusk &copy; 2015 - 2019</span>
+        <p><span>WhiteDusk &copy; 2019</span>
             <span>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
@@ -549,10 +548,10 @@ var BLOG = { ROOT: '/WhiteAndDusk.github.io/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = 'leave me alone';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = 'just go';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
